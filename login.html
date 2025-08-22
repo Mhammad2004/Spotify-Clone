@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Spotify</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #343534, #000000);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        .login-container {
+            background: linear-gradient(90deg, #101010, #161616);
+            padding: 40px;
+            margin-top: 25px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .login-container h1 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-social {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 300px;
+            background-color: transparent;
+            border: 1px solid #959090;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 13px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-social:hover {
+            border: 1px solid white;
+        }
+
+        .btn-social img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .divider {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .divider span {
+            background: #121212;
+            padding: 0 12px;
+            /* position: relative; */
+            z-index: 2;
+        }
+
+        .divider::before {
+            content: "";
+            position: absolute;
+            top: 60%;
+            left: 99px;
+            width: 70%;
+            height: 1px;
+            background-color: #555;
+            z-index: 1;
+        }
+
+        .input-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-form label {
+            margin-right: 150px;
+            padding-bottom: 10px;
+            font-weight: 900;
+            font-size: 15px;
+        }
+
+        input[type="email"] {
+            padding: 12px 14px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            background-color: transparent;
+            border: 1px solid rgb(163, 159, 159);
+            color: #fff;
+            width: 300px;
+        }
+
+        input[type="email"]:hover {
+            border: 1px solid white;
+        }
+
+        .login-button {
+            padding: 12px;
+            background-color: #1db954;
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+        }
+
+        .login-button:hover {
+            background-color: #33d96d;
+            scale: 1.05;
+        }
+
+        .footer-text {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            color: #aaa;
+        }
+
+        .bottom-footer {
+            /* height: 100px; */
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            margin-top: 25px;
+            background-color: #141414;
+            font-size: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .bottom-footer a {
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 25px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo"><img src="assets/spotifyLogo.jpg" alt=""></div>
+        <h1>Log in to Spotify</h1>
+
+        <div class="btn-social">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />
+            Continue with Google
+        </div>
+        <div class="btn-social">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+                alt="Facebook" />
+            Continue with Facebook
+        </div>
+        <div class="btn-social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
+            Continue with Apple
+        </div>
+
+        <div class="divider"></div>
+
+        <form class="input-form">
+            <label for="">Email or username</label>
+            <input type="email" placeholder="Email or username" required />
+            <button onclick="window.location.href='index.html'" type="submit" class="login-button">Continue</button>
+        </form>
+
+        <div class="footer-text">Don't have an account? <a href="Signup.html" style="color: #e9efeb;">Sign up for
+                spotify</a>
+        </div>
+
+    </div>
+    <div class="bottom-footer">
+        <span>This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of
+                Service</a> apply.</span>
+    </div>
+</body>
+
+</html>
