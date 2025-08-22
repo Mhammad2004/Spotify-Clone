@@ -32,3 +32,6 @@ Add playlist creation & song search
 Implement backend with database & authentication
 
 Fetch songs dynamically instead of static folder
+
+Checkout this clone here : https://mhammad2004.github.io/Spotify-Clone/
+
